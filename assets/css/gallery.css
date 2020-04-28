@@ -1,0 +1,291 @@
+
+/* Image card animation */
+
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 95vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container 
+{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .card
+{
+  position: relative;
+}
+
+.container .card .face
+{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    
+}
+
+.container .card .face.face1
+{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1
+{
+    background: #eee343;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content
+{
+    opacity: 0.3;
+    transition: 0.35s;
+}
+
+.container .card:hover .face.face1 .content
+{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content h3
+{
+    margin: 3px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card:hover .face.face1 .content h3
+{
+    color: black;
+}
+.container .card .face.face2
+{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 12px 5px 20px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+    box-shadow: -5px 0px 30px rgba(255, 217, 93, 0.40);
+}
+
+.container .card .face.face2 p
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container .card .face.face2 a
+{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333
+}
+
+.container .card .face.face2 a:hover
+{
+    background: #333;
+    color: #fff;
+
+}
+
+/* Thumbnails images */
+
+ul.thumbnails 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  ul.thumbnails li 
+  {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+  }
+
+  ul.thumbnails li img 
+  {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    width: 250px;
+  }
+
+  /* Scrollbar */
+
+::-webkit-scrollbar {
+    height: 45px; bottom: -100px;
+
+}
+
+::-webkit-scrollbar-track {
+    margin: 350px;
+  }
+
+ ::-webkit-scrollbar-track {
+    scroll-margin-bottom: 350px;
+  }
+
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-resizer 
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5); 
+}
+
+::-webkit-scrollbar:vertical 
+{
+    display: none;
+}
+
+.h3
+{
+    font-size: 100px;
+}
+
+
+@media screen and (max-width: 1680px) {
+
+    .h3 {
+        font-size: 50pt;
+    }
+
+}
+
+@media screen and (max-width: 1480px) {
+
+    .h3 {
+        font-size: 30pt;
+    }
+
+}
+
+@media screen and (max-width: 1310px) {
+
+    .h3 {
+        font-size: 40pt;
+        position: fixed;
+        padding-bottom: 520px;
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1020px) 
+{
+
+    .h3 {
+        font-size: 20pt;
+        position: fixed;
+        padding-bottom: 475px;
+        padding-left: 0px;
+ 
+    }
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 99;
+    display: relative;
+    cursor: pointer;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: rgba(221, 221, 221, 0.61);
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+
+    margin-right: 50px;
+    margin-bottom: 150px;
+  }
+  #back2Top:hover {
+    background-color: #eee343;
+    color: black;
+  }
+
+/* light box */
+
+.lightbox {
+z-index: 100;
+display: none;
+position: absolute;
+top: 50%;
+left: 50%;
+width: auto;
+height: auto;
+padding: 0px;
+margin-left: 25%;
+border: 5px solid rgb(255, 255, 255);
+background-color: white;
+
+}
+
+.lightboxOverlay {
+z-index: 101;
+position: absolute;
+top: 1px;
+left: 1px;
+
+}
+
+.lightbox-target {
+    left: 110px;
+}
+
+.lb-outerContainer { position: left; max-width:auto; max-height:auto; }
+.lb-image{ position: left; width:auto; max-height:auto;}
