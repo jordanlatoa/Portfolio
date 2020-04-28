@@ -9,10 +9,53 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script type="text/javascript" defer scr="assets/js/script.js"></script>
+		<style>
+
+			div#loadscreen
+{
+				background: #000;
+				opacity: 1;
+				position: fixed;
+				z-index: 10;
+				top: 0px;
+				width: 100%;
+				height: 1600px;
+			
+}
+
+			div#loadscreen > div#loading 
+{
+		margin: 300px 300px;
+
+		position:relative;
+		font-size: 8em;
+		color: #222;
+		text-transform: uppercase;
+		border-bottom: 32px solid #222;
+		letter-spacing: 0.05em;
+		line-height: 1.2em;
+		animation-name: animate;
+		animation-duration: 10s;
+
+}
+
+@keyframe animate
+{
+	0%  {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
+		</style>
+		<script>
+			window.addEventListener("load", function(){
+				var loadscreen = document.getElementById("loadscreen");
+				document.body.removeChild(loadscreen);
+			});
+		</script>
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
+		<div id="loadscreen"><div id="loading">Loading...</div></div>
 			<div id="wrapper">
 
 				<!-- Header -->
