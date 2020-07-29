@@ -1,308 +1,541 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/gallery.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/lightbox.min" rel="stylesheet" type="text/css">
-    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
 
-    <script type="text/javascript" defer src="assets/js/gallery.js"></script>
+/* Image card animation */
 
-    <script>
-        lightbox.option ({
+body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(../../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.3), rgba(19, 21, 25, 0.3)), url("../../images/bg.jpg");
 
-            showImageNumberLabel: false,
-            alwaysShowNavOnTouchDevices: true,
-            wrapAround: true,
+}
 
-        })
-        </script>
 
-    <title>Jordan Latoa Portfolio Gallery</title>
-</head> 
-<body>
+/*Home button*/
+.home_button {
+    margin: 0;
+    margin-left: -85vh;
+    margin-top: 45vh;
+    position: fixed;
+    display: flex;
+    color: pink;
+    background-color: rgb(19, 21, 25, 0.3); 
+    font-size: 18px; 
+    border: none; 
+    color: white; 
+    padding: 16px 16px; 
+    cursor: pointer; 
+}
 
-<div class="h3" id="myHeader"><h1>Gallery</h1></div>
+.home_button:hover {
 
-<a id="back2Top" title="Back to top" href="#"> &#10148;</a>
+    color: #eee343;
+    background-color: rgb(19, 21, 25, 1); 
+}
 
-    <ul class="thumbnails">
-    <div class="container">
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                    <img src="images/NRLcontent.png">
-                    </li>
-                    <h3>NRL Content 1</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Graphic created in Photoshop for a friend's NRL Twitter account @NRL_Oracle
-                    </p>
-                    <a href="images/NRLcontent.png" data-lightbox="NRL" data-title="Graphic created in Photoshop for a friend's NRL Twitter account @NRL_Oracle">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                    <img src="images/NRLcontent1.png">
-                    </li>
-                    <h3>NRL Content 2</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        One of the weekly graphics created for a friend's NRL Twitter account @NRL_Oracle
-                    </p>
-                    <a href="images/NRLcontent1.png" data-lightbox="NRL" data-title="One of the weekly graphics created for a friend's NRL Twitter account @NRL_Oracle">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                    <img src="images/NRLcontent2.png">
-                    </li>
-                    <h3>NRL Content 3</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        One of the 16 trading card graphic created for a friend's NRL Twitter account @NRL_Oracle
-                    </p>
-                    <a href="images/NRLcontent2.png" data-lightbox="NRL" data-title="One of the 16 trading card graphic created for a friend's NRL Twitter account @NRL_Oracle">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="NRLcontent2"><img src="images/NRLcontent3.png"></a>
-                    </li>
-                    <h3>NRL Content 4</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        A fake UFC type graphic created for a friend's NRL Twitter account @NRL_Oracle
-                    </p>
-                    <a href="images/NRLcontent3.png" data-lightbox="NRL" data-title="A fake UFC type graphic created for a friend's NRL Twitter account @NRL_Oracle">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="NRLcontent3"> <img src="images/NinesLetsPlay.png"></a>
-                    </li>
-                    <h3>NRL Content 5</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Graphic created for a friend's NRL Twitter account @NRL_Oracle
-                    </p>
-                    <a href="images/NinesLetsPlay.png" data-lightbox="NRL" data-title="Graphic created for a friend's NRL Twitter account @NRL_Oracle.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="NinesLetsPlay"> <img src="images/NRLContentBannerWebsite.png"></a>
-                    </li>
-                    <h3>Hero graphic</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Hero graphic created for a friend's NRL website.
-                    </p>
-                    <a href="images/NRLContentBannerWebsite.png" data-lightbox="NRL" data-title="Hero graphic created for a friend's NRL website.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="NRLContentBannerWebsite"><img src="images/TwitterCard1.png"></a>
-                    </li>
-                    <h3>Content 1</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Twitter card depiciting an announcement type post created for Decent.bet to replace boring meta data or posts with no graphics.
-                    </p>
-                    <a href="images/TwitterCard1.png"  data-lightbox="NRL" data-title="Twitter card depiciting an announcement type post created for Decent.bet to replace boring meta data or posts with no graphics.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="TwitterCard1"><img src="images/TwitterCard2.png"></a>
-                    </li>
-                    <h3>Content 1</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Twitter card depiciting a news update type post created for Decent.bet to replace boring meta data or posts with no graphics.
-                    </p>
-                    <a href="images/TwitterCard2.png"  data-lightbox="NRL" data-title="Twitter card depiciting a news update type post created for Decent.bet to replace boring meta data or posts with no graphics.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="TwitterCard2"><img src="images/TwitterCard3.png"></a>
-                    </li>
-                    <h3>Content 1</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Twitter card depiciting a reminder type post created for Decent.bet to replace boring meta data or posts with no graphics.
-                    </p>
-                    <a href="images/TwitterCard3.png"  data-lightbox="NRL" data-title="Twitter card depiciting a reminder type post created for Decent.bet to replace boring meta data or posts with no graphics.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                    <a name="TwitterCard3"><img src="images/ProfilePicture1_DBET(Halloween).png"></a>
-                    </li>
-                    <h3>Profile picture</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Halloween themed profile picture for Decent.bet's Telegram profile.
-                    </p>
-                    <a href="images/ProfilePicture1_DBET(Halloween).png" data-lightbox="DBET" data-title="Halloween themed profile picture for Decent.bet's Telegram profile.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="DBEThalloween"><img src="images/Content1.png"></a>
-                    </li>
-                    <h3>Decent.bet content</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Graphic to show users a quick glance of the weekly quests available on the platform.
-                    </p>
-                    <a href="images/Content1.png"  data-lightbox="NRL" data-title="Graphic to show users a quick glance of the weekly quests available on the platform.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="Content1"><img src="images/Content4TelegramBot.png"></a>
-                    </li>
-                    <h3>Telegram activity</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Graphic that would pop up in Telegram when a random user was chosen by the bot to award them pseudo exp for pseudo levels in the group.
-                    </p>
-                    <a href="images/Content4TelegramBot.png"  data-lightbox="NRL" data-title=" Graphic that would pop up in Telegram when a random user was chosen by the bot to award them pseudo exp for pseudo levels in the group.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="Content4TelegramBot"><img src="images/SmallActsDraft1.png"></a>
-                    </li>
-                    <h3>Logo Draft 1</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Logo draft for a charity application I was working on with a friend.
-                    </p>
-                    <a href="images/SmallActsDraft1.png"  data-lightbox="NRL" data-title="Logo draft for a charity application I was working on with a friend.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="SmallActsDraft2"><img src="images/SmallActsDraft2.png"></a>
-                    </li>
-                    <h3>Logo Draft 2</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Logo draft for a charity application I was working on with a friend.
-                    </p>
-                    <a href="images/SmallActsDraft2.png"  data-lightbox="NRL" data-title="Logo draft for a charity application I was working on with a friend.">View full image</a>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <li>
-                        <a name="SmallActsDraft3"> <img src="images/SmallActsDraft3.png"></a>
-                    </li>
-                    <h3>Logo Draft 3</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>
-                        Logo draft for a charity application I was working on with a friend.
-                    </p>
-                    <a href="images/SmallActsDraft3.png"  data-lightbox="NRL" data-title="Logo draft for a charity application I was working on with a friend.">View full image</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </ul>
+/* Arrows */
+.arrowed {
+
+	height: 200px; width: 200px;
+	margin: 0 20px 20px 0;
+
+}
+
+.arrowed div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+}
+
+.arrow {
+	height: 30px; width: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-width: 3px 3px 0 0;
+	transform: rotate(45deg);
+}
+
+.arrow:before, .arrow:after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 30px; width: 30px;
+	border-width: 3px 3px 0 0;
+}
+
+.arrow:before {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-width: 3px 3px 0 0;
+	top: 7px; left: -10px;
+}
+
+.arrow:after {
+	border: 1px solid rgba(255, 255, 255, 1);
+	border-width: 3px 3px 0 0;
+	top: -13px; left: 10px;
+}
+
+
+.container 
+{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    padding-top: 75px;
+    height: 200px;
+
+}
+
+.container .card
+{
+  position: relative;
+
+
+}
+
+.container .card .face
+{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+    
+}
+
+.container .card .face.face1
+{
+    position: relative;
+    background: rgba(19, 21, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1
+{
+    background: #eee343;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content
+{
+    opacity: 0.3;
+    transition: 0.35s;
+}
+
+.container .card:hover .face.face1 .content
+{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content h3
+{
+    margin: 3px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card:hover .face.face1 .content h3
+{
+    color: black;
+}
+.container .card .face.face2
+{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 12px 5px 20px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2
+{
+    transform: translateY(0);
+    box-shadow: -5px 0px 30px rgba(255, 217, 93, 0.40);
+}
+
+.container .card .face.face2 p
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container .card .face.face2 a
+{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333
+}
+
+.container .card .face.face2 a:hover
+{
+    background: #333;
+    color: #fff;
+
+}
+
+
+.outer-container2 {
+  
+}
+
+.outer-container {
+    width: 1000px;
+  
+} 
+
+/* Thumbnails images */
 
 
 
-</body>
-</html>
+ul.thumbnails 
+{
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1001px;
+    margin-bottom: -221px;
+    margin-right: -154px;
+    margin-left: -163px;
+    margin-top: -480px;
+    position: fixed;
+
+
+    /*border: 2px solid yellow;*/
+    
+
+
+}
+
+  ul.thumbnails li 
+  {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+  }
+
+  ul.thumbnails li img 
+  {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    width: 250px;
+  }
+
+  /*bottom row thumbnails*/
+ul.thumbnails2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1001px;
+    margin-bottom: -221px;
+    margin-right: -154px;
+    margin-left: -163px;
+    margin-top: 50px;
+    position: fixed;
+
+    /*border: 2px solid red;*/
+    
+
+
+}
+
+  ul.thumbnails2 li 
+  {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+  }
+
+  ul.thumbnails2 li img 
+  {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    width: 250px;
+  }
+
+
+
+  /* Scrollbar */
+
+::-webkit-scrollbar {
+    height: 40px; 
+    bottom: -100px;
+
+}
+
+::-webkit-scrollbar-track {
+    margin: 350px;
+  }
+
+ ::-webkit-scrollbar-track {
+    scroll-margin-bottom: 350px;
+  }
+
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-resizer 
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5); 
+}
+
+::-webkit-scrollbar:vertical 
+{
+    display: none;
+}
+
+.title1
+{
+    font-size: 100px;
+
+}
+
+.title2
+{
+    font-size: 100px;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+@media screen and (max-width: 1680px) {
+
+    .h1 {
+        font-size: 50pt;
+    }
+
+}
+
+@media screen and (max-width: 1480px) {
+
+    .h1 {
+        font-size: 30pt;
+    }
+
+}
+
+@media screen and (max-width: 1310px) {
+
+    .h1 {
+        font-size: 40pt;
+        position: fixed;
+        padding-bottom: 520px;
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1020px) 
+{
+
+    .h1 {
+        font-size: 20pt;
+        position: fixed;
+        padding-bottom: 475px;
+        padding-left: 0px;
+ 
+    }
+}
+
+
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 99;
+    display: relative;
+    cursor: pointer;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: rgba(221, 221, 221, 0.61);
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+
+    margin-right: 50px;
+    margin-bottom: 150px;
+  }
+  #back2Top:hover {
+    background-color: #eee343;
+    color: black;
+  }
+
+/* light box */
+
+.lightbox {
+z-index: 100;
+display: none;
+position: absolute;
+top: 50%;
+left: 50%;
+width: auto;
+height: auto;
+padding: 0px;
+margin-left: 25%;
+border: 5px solid rgb(255, 255, 255);
+background-color: white;
+
+}
+
+.lightboxOverlay {
+z-index: 101;
+position: absolute;
+top: 1px;
+left: 1px;
+
+}
+
+.lightbox-target {
+    left: 110px;
+}
+
+.lb-outerContainer { position: left; max-width:auto; max-height:auto; }
+.lb-image{ position: left; width:auto; max-height:auto;}
+
+.lightboxvid {
+    background-color: fade(black, 80%);  
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+    
+.lightbox-close {
+      text-transform: uppercase;    
+      background: transparent;
+      position: fixed; 
+      font-weight: 300;      
+      font-size: 15px;
+      border: none;
+      color: #333;
+      bottom: 2px;
+      right: 2px;
+    border: 1px solid #333;
+    }
+
+    .lightbox-close:hover {
+        text-transform: uppercase;    
+        background: #333;
+        position: fixed; 
+        font-weight: 300;      
+        font-size: 15px;
+        border: none;
+        color: #fff;
+        bottom: 2px;
+        right: 2px;
+        border: 1px solid #333;
+      }
+
+
+
+  
+  .video-container {  
+      padding-bottom: 56.25%;
+      position: relative;  
+      padding-top: 30px; 
+      overflow: hidden;
+      height: 0; 
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+      position: absolute;
+      height: 50%;  
+      width: 50%;  
+      left: 25%;  
+      top: 25%;
+  
+  }
+
+
+  
+  /* IGNORE from THIS POINT ON */
+  
+
+  
+  #playme {
+    background: #fff;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #333;
+  }
+
+  #playme:hover {
+    background: #333;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    font-weight: 900;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #fff;
+  }
