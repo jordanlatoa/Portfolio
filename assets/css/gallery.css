@@ -6,25 +6,101 @@ body
     margin: 0;
     padding: 0;
     min-height: 95vh;
-    background: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    background: url(../../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(19, 21, 25, 0.3), rgba(19, 21, 25, 0.3)), url("../../images/bg.jpg");
 
 }
+
+
+/*Home button*/
+.home_button {
+    margin: 0;
+    margin-left: -85vh;
+    margin-top: 45vh;
+    position: fixed;
+    display: flex;
+    color: pink;
+    background-color: rgb(19, 21, 25, 0.3); 
+    font-size: 18px; 
+    border: none; 
+    color: white; 
+    padding: 16px 16px; 
+    cursor: pointer; 
+}
+
+.home_button:hover {
+
+    color: #eee343;
+    background-color: rgb(19, 21, 25, 1); 
+}
+
+/* Arrows */
+.arrowed {
+
+	height: 200px; width: 200px;
+	margin: 0 20px 20px 0;
+
+}
+
+.arrowed div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: auto;
+}
+
+.arrow {
+	height: 30px; width: 30px;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-width: 3px 3px 0 0;
+	transform: rotate(45deg);
+}
+
+.arrow:before, .arrow:after {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 30px; width: 30px;
+	border-width: 3px 3px 0 0;
+}
+
+.arrow:before {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-width: 3px 3px 0 0;
+	top: 7px; left: -10px;
+}
+
+.arrow:after {
+	border: 1px solid rgba(255, 255, 255, 1);
+	border-width: 3px 3px 0 0;
+	top: -13px; left: 10px;
+}
+
+
 .container 
 {
     width: 1000px;
+    height: 800px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    padding-top: 75px;
+    height: 200px;
 
 }
 
 .container .card
 {
   position: relative;
+
+
 }
 
 .container .card .face
@@ -38,7 +114,7 @@ body
 .container .card .face.face1
 {
     position: relative;
-    background: #333;
+    background: rgba(19, 21, 25);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,12 +196,40 @@ body
 
 }
 
+
+.outer-container2 {
+  
+}
+
+.outer-container {
+    width: 1000px;
+  
+} 
+
 /* Thumbnails images */
+
+
 
 ul.thumbnails 
 {
     display: flex;
     flex-wrap: wrap;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1001px;
+    margin-bottom: -221px;
+    margin-right: -154px;
+    margin-left: -163px;
+    margin-top: -480px;
+    position: fixed;
+
+
+    /*border: 2px solid yellow;*/
+    
+
+
 }
 
   ul.thumbnails li 
@@ -147,10 +251,54 @@ ul.thumbnails
     width: 250px;
   }
 
+  /*bottom row thumbnails*/
+ul.thumbnails2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1001px;
+    margin-bottom: -221px;
+    margin-right: -154px;
+    margin-left: -163px;
+    margin-top: 50px;
+    position: fixed;
+
+    /*border: 2px solid red;*/
+    
+
+
+}
+
+  ul.thumbnails2 li 
+  {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 150px;
+  }
+
+  ul.thumbnails2 li img 
+  {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    width: 250px;
+  }
+
+
+
   /* Scrollbar */
 
 ::-webkit-scrollbar {
-    height: 45px; bottom: -100px;
+    height: 40px; 
+    bottom: -100px;
 
 }
 
@@ -184,15 +332,24 @@ ul.thumbnails
     display: none;
 }
 
-.h3
+.title1
 {
     font-size: 100px;
+
+}
+
+.title2
+{
+    font-size: 100px;
+    height: 100px;
+    width: 100px;
+
 }
 
 
 @media screen and (max-width: 1680px) {
 
-    .h3 {
+    .h1 {
         font-size: 50pt;
     }
 
@@ -200,7 +357,7 @@ ul.thumbnails
 
 @media screen and (max-width: 1480px) {
 
-    .h3 {
+    .h1 {
         font-size: 30pt;
     }
 
@@ -208,7 +365,7 @@ ul.thumbnails
 
 @media screen and (max-width: 1310px) {
 
-    .h3 {
+    .h1 {
         font-size: 40pt;
         position: fixed;
         padding-bottom: 520px;
@@ -220,7 +377,7 @@ ul.thumbnails
 @media screen and (max-width: 1020px) 
 {
 
-    .h3 {
+    .h1 {
         font-size: 20pt;
         position: fixed;
         padding-bottom: 475px;
@@ -228,6 +385,8 @@ ul.thumbnails
  
     }
 }
+
+
 
 #back2Top {
     width: 40px;
@@ -289,3 +448,94 @@ left: 1px;
 
 .lb-outerContainer { position: left; max-width:auto; max-height:auto; }
 .lb-image{ position: left; width:auto; max-height:auto;}
+
+.lightboxvid {
+    background-color: fade(black, 80%);  
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+    
+.lightbox-close {
+      text-transform: uppercase;    
+      background: transparent;
+      position: fixed; 
+      font-weight: 300;      
+      font-size: 15px;
+      border: none;
+      color: #333;
+      bottom: 2px;
+      right: 2px;
+    border: 1px solid #333;
+    }
+
+    .lightbox-close:hover {
+        text-transform: uppercase;    
+        background: #333;
+        position: fixed; 
+        font-weight: 300;      
+        font-size: 15px;
+        border: none;
+        color: #fff;
+        bottom: 2px;
+        right: 2px;
+        border: 1px solid #333;
+      }
+
+
+
+  
+  .video-container {  
+      padding-bottom: 56.25%;
+      position: relative;  
+      padding-top: 30px; 
+      overflow: hidden;
+      height: 0; 
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+      position: absolute;
+      height: 50%;  
+      width: 50%;  
+      left: 25%;  
+      top: 25%;
+  
+  }
+
+
+  
+  /* IGNORE from THIS POINT ON */
+  
+
+  
+  #playme {
+    background: #fff;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #333;
+  }
+
+  #playme:hover {
+    background: #333;
+    text-transform: uppercase;
+    margin: 15px 0 0;
+    font-weight: 900;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #fff;
+  }
